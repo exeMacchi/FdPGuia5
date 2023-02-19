@@ -1,4 +1,4 @@
-// 8. Hacer un programa que solicite una lista de nÃºmeros que corta cuando se ingresa un cero y luego mostrar 
+// 8. Hacer un programa que solicite una lista de números que corta cuando se ingresa un cero y luego mostrar 
 //    por pantalla el menor y el segundo menor.
 
 
@@ -17,47 +17,58 @@ int main()
     cout << "Ingrese un numero: ";
     cin >> N;
 
-    while (N != 0) {
-        if (i == 0) {
+    while (N != 0)
+    {
+        if (i == 0)
+        {
             BanPm = true;
             Pm = N;
             i++;
         }
-        else if (i == 1) {
+        else if (i == 1)
+        {
             BanSm = true;
-            if (N < Pm) {
+            if (N < Pm)
+            {
                 Sm = Pm;
                 Pm = N;
             }
-            else {
+            else
+            {
                 Sm = N;
             }
             i++;
         }
-        else if (N < Pm) {
+        else if (N < Pm)
+        {
             Sm = Pm;
             Pm = N;
         }
-        else if (N < Sm) {
+        else if (N < Sm)
+        {
             Sm = N;
         }
 
-        if (i == 1) {
+        if (i == 1)
+        {
             cout << "\nIngrese otro numero: ";
             cin >> N;
         }
-        else {
+        else
+        {
             cout << "\nPresione '0' para finalizar el proceso.";
             cout << "\nIngrese otro numero: ";
             cin >> N;
         }
     }
 
-    if (BanPm && BanSm) {
+    if (BanPm && BanSm)
+    {
         cout << "\nPrimer menor: " << Pm << endl;
         cout << "Segundo menor: " << Sm << endl;
     }
-    else {
+    else
+    {
         cout << "\nError: falta numero para comparacion." << endl;
     }
     return 0;

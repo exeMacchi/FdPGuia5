@@ -1,4 +1,4 @@
-// 2. Hacer un programa para mostrar los nÃºmeros del 10 al 1. No se debe realizar ningÃºn pedido de datos. USANDO WHILE.
+// 2. Hacer un programa para mostrar los números del 10 al 1. No se debe realizar ningún pedido de datos. USANDO WHILE.
 
 #include <iostream>
 
@@ -9,11 +9,14 @@ int main()
 {
     int N = 10;
 
-    while (N > 0) {
-        if (N > 1) {
+    while (N > 0)
+    {
+        if (N > 1)
+        {
             cout << N << ", ";
         }
-        else {
+        else
+        {
             cout << N << "." << endl;
         }
         N--;

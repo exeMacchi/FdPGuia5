@@ -1,5 +1,5 @@
-// 7. Hacer un programa que solicite una lista de nÃºmeros que corta cuando se ingresa un cero y luego mostrar por 
-//    pantalla el mÃ¡ximo de ellos y la posiciÃ³n en la que fue ingresado.
+// 7. Hacer un programa que solicite una lista de números que corta cuando se ingresa un cero y luego mostrar por 
+//    pantalla el máximo de ellos y la posición en la que fue ingresado.
 
 #include <iostream>
 
@@ -14,18 +14,22 @@ int main()
     cout << Pos + 1 << ". Ingrese un numero: ";
     cin >> N;
 
-    while (N != 0) {
-        if (Pos == 0) {
+    while (N != 0)
+    {
+        if (Pos == 0)
+        {
             Max = N;
             Pos++;
             PosMax = Pos;
         }
-        else if (N > Max) {
+        else if (N > Max)
+        {
             Max = N;
             Pos++;
             PosMax = Pos;
         }
-        else {
+        else
+        {
             Pos++;
         }
         cout << "\nPresione '0' para finalizar el proceso.";
@@ -33,11 +37,13 @@ int main()
         cin >> N;
     }
 
-    if (Pos != 0) {
+    if (Pos != 0)
+    {
         cout << "\nMaximo: " << Max << endl;
         cout << "Posicion: " << PosMax << endl;
     }
-    else {
+    else
+    {
         cout << "\nError: ningun numero fue registrado." << endl;
     }
     return 0;

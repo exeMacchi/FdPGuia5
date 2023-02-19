@@ -1,4 +1,4 @@
-// 6. Hacer un programa que solicite UN nÃºmero y luego calcule y emita un cartel aclaratorio si el mismo es primo 
+// 6. Hacer un programa que solicite UN número y luego calcule y emita un cartel aclaratorio si el mismo es primo 
 //    o no es primo. Usando While.
 
 
@@ -15,17 +15,21 @@ int main()
     cout << "Ingrese un numero: ";
     cin >> N;
 
-    while (D <= N) {
-        if (N % D == 0) {
+    while (D <= N)
+    {
+        if (N % D == 0)
+        {
             Cont++;
         }
         D++;
     }
 
-    if (Cont == 2) {
+    if (Cont == 2)
+    {
         cout << "\nEl numero es primo." << endl;
     }
-    else {
+    else
+    {
         cout << "\nEl numero no es primo." << endl;
     }
     return 0;

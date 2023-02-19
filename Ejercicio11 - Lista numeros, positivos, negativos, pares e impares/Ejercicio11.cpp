@@ -1,8 +1,8 @@
-// 11. Hacer un programa para ingresar una lista de nÃºmeros que corta cuando se ingresa un cero y luego mostrar: 
-//        â€¢ La cantidad de nÃºmeros primos.
-//        â€¢ La cantidad de nÃºmeros pares
-//        â€¢ La cantidad de positivos.
-//        â€¢ La cantidad de negativos.
+// 11. Hacer un programa para ingresar una lista de números que corta cuando se ingresa un cero y luego mostrar: 
+//        • La cantidad de números primos.
+//        • La cantidad de números pares
+//        • La cantidad de positivos.
+//        • La cantidad de negativos.
 
 #include <iostream>
 
@@ -20,33 +20,41 @@ int main()
     cout << "Ingrese un numero: ";
     cin >> N;
 
-    while (N != 0) {
-        if (N > 0) {
+    while (N != 0)
+    {
+        if (N > 0)
+        {
             Positivo = true;
             ConPos++;
             CD = 0;
             D = 1;
 
-            while (D <= N) {
-                if (N % D == 0) {
+            while (D <= N)
+            {
+                if (N % D == 0)
+                {
                     CD++;
                 }
                 D++;
             }
 
-            if (CD == 2) {
+            if (CD == 2)
+            {
                 ConPri++;
             }
 
-            if (N % 2 == 0) {
+            if (N % 2 == 0)
+            {
                 ConPar++;
             }
         }
-        else {
+        else
+        {
             Negativo = true;
             ConNeg++;
 
-            if (N % 2 == 0) {
+            if (N % 2 == 0)
+            {
                 ConPar++;
             }
         }
@@ -55,13 +63,15 @@ int main()
         cin >> N;
     }
 
-    if (Positivo || Negativo) {
+    if (Positivo || Negativo)
+    {
         cout << "\nCantidad de numeros positivos: " << ConPos << endl;
         cout << "Cantidad de numeros negativos: " << ConNeg << endl;
         cout << "Cantidad de numeros primos: " << ConPri << endl;
         cout << "Cantidad de numeros pares: " << ConPar << endl;
     }
-    else {
+    else
+    {
         cout << "\nNingun numero fue registrado." << endl;
     }
     return 0;

@@ -1,4 +1,4 @@
-// 4. Hacer un programa que solicite dos nÃºmeros y luego muestre los nÃºmeros entre el menor y el mayor de ellos. 
+// 4. Hacer un programa que solicite dos números y luego muestre los números entre el menor y el mayor de ellos. 
 //    Acordate, usando While.
 
 #include <iostream>
@@ -16,26 +16,32 @@ int main()
     cout << "Ingrese el segundo numero: ";
     cin >> B;
 
-    if (A > B) {
+    if (A > B)
+    {
         May = A;
         Men = B;
     }
-    else if (B > A) {
+    else if (B > A)
+    {
         May = B;
         Men = A;
     }
-    else {
+    else
+    {
         cout << "\n" << A << endl;
         return 0;
     }
 
     cout << endl;
 
-    while (Men <= May) {
-        if (Men != May) {
+    while (Men <= May)
+    {
+        if (Men != May)
+        {
             cout << Men << ", ";
         }
-        else {
+        else
+        {
             cout << Men << "." << endl;
         }
         Men++;

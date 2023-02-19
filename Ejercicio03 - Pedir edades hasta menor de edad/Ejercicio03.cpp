@@ -1,5 +1,5 @@
-// 3. Hacer un programa que solicite la edad de un grupo de personas. El programa deber√° pedir edades hasta 
-//    que se ingrese una edad menor a 18 a√±os. Deber√° mostrar por pantalla cu√°ntas personas mayores se registraron.
+// 3. Hacer un programa que solicite la edad de un grupo de personas. El programa deber· pedir edades hasta 
+//    que se ingrese una edad menor a 18 aÒos. Deber· mostrar por pantalla cu·ntas personas mayores se registraron.
 
 
 #include <iostream>
@@ -15,16 +15,19 @@ int main()
     cout << "Ingrese una edad: ";
     cin >> E;
 
-    while (E >= 18) {
+    while (E >= 18)
+    {
         ConE++;
         cout << "Ingrese otra edad: ";
         cin >> E;
     }
 
-    if (ConE != 0) {
+    if (ConE != 0)
+    {
         cout << "\nCantidad de personas mayores: " << ConE << endl;
     }
-    else {
+    else
+    {
         cout << "\nNinguna persona mayor de edad fue registrada." << endl;
     }
     return 0;

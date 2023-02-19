@@ -1,5 +1,5 @@
-// 10. Hacer un programa que solicite una lista de nÃºmeros que corta cuando se ingresa un cero y luego emitir por 
-//     pantalla el mÃ¡ximo de los nÃºmeros negativos y el mÃ­nimo de los nÃºmeros positivos.
+// 10. Hacer un programa que solicite una lista de números que corta cuando se ingresa un cero y luego emitir por 
+//     pantalla el máximo de los números negativos y el mínimo de los números positivos.
 
 #include <iostream>
 
@@ -16,22 +16,29 @@ int main()
     cout << "Ingrese un numero: ";
     cin >> N;
 
-    while (N != 0) {
-        if (N > 0) {
-            if (!Positivo) {
+    while (N != 0)
+    {
+        if (N > 0)
+        {
+            if (!Positivo)
+            {
                 MinPos = N;
                 Positivo = true;
             }
-            else if (N < MinPos) {
+            else if (N < MinPos)
+            {
                 MinPos = N;
             }
         }
-        else {
-            if (!Negativo) {
+        else
+        {
+            if (!Negativo)
+            {
                 MaxNeg = N;
                 Negativo = true;
             }
-            else if (N > MaxNeg) {
+            else if (N > MaxNeg)
+            {
                 MaxNeg = N;
             }
         }
@@ -40,19 +47,23 @@ int main()
         cin >> N;
     }
 
-    if (Positivo && Negativo) {
+    if (Positivo && Negativo)
+    {
         cout << "\nMinimo de los positivos: " << MinPos << endl;
         cout << "Maximo de los negativos: " << MaxNeg << endl;
     }
-    else if (Positivo) {
+    else if (Positivo)
+    {
         cout << "\nMinimo de los positivos: " << MinPos << endl;
         cout << "Ningun numero negativo fue registrado." << endl;
     }
-    else if (Negativo) {
+    else if (Negativo)
+    {
         cout << "\nMaximo de los negativos: " << MaxNeg << endl;
         cout << "Ningun numero positivo fue registrado." << endl;
     }
-    else {
+    else
+    {
         cout << "\nError: ningun numero fue registrado." << endl;
     }
     return 0;
